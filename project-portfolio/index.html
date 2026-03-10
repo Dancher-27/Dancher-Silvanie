@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancher Silvanie — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Dancher<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html"    class="active">Home</a></li>
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projecten</a></li>
+            <li><a href="hobbies.html">Hobby's</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-wrap">
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="dot"></span>
+                Beschikbaar voor stage & werk
+            </div>
+
+            <h1 class="fade-in fade-in-delay-1">
+                <span class="first">Hoi, ik ben</span><br>
+                <span class="last">Dancher Silvanie</span>
+            </h1>
+
+            <p class="hero-sub fade-in fade-in-delay-2">
+                <span id="typedRole">Software Developer</span><span style="color:var(--teal);font-weight:700;">|</span>
+            </p>
+            <p class="hero-school fade-in fade-in-delay-2">
+                Laatste jaar aan <span>Techniek College Rotterdam</span> · Prins Alexanderlaan
+            </p>
+
+            <div class="hero-cta fade-in fade-in-delay-3">
+                <a href="about.html"    class="btn btn-primary">Over mij</a>
+                <a href="projects.html" class="btn btn-outline">Bekijk projecten</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="stat-strip fade-in fade-in-delay-4">
+                <div class="stat-item">
+                    <div class="stat-num">4+</div>
+                    <div class="stat-text">Talen & frameworks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">2</div>
+                    <div class="stat-text">Portfolio projecten</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-text">Jaar ervaring</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">5</div>
+                    <div class="stat-text">Hobby's & passies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <div class="section-label fade-in">Verken mijn portfolio</div>
+            <h2 class="section-title fade-in fade-in-delay-1">Wat wil je <span>ontdekken?</span></h2>
+            <div class="preview-grid">
+                <a href="about.html" class="preview-card fade-in fade-in-delay-1">
+                    <div class="pc-icon">👤</div>
+                    <div class="pc-title">Over mij</div>
+                    <div class="pc-sub">Wie ik ben & mijn opleiding</div>
+                </a>
+                <a href="skills.html" class="preview-card fade-in fade-in-delay-2">
+                    <div class="pc-icon">💻</div>
+                    <div class="pc-title">Skills</div>
+                    <div class="pc-sub">HTML, CSS, PHP, SQL & meer</div>
+                </a>
+                <a href="projects.html" class="preview-card fade-in fade-in-delay-3">
+                    <div class="pc-icon">🚀</div>
+                    <div class="pc-title">Projecten</div>
+                    <div class="pc-sub">Mijn portfolio werk</div>
+                </a>
+                <a href="hobbies.html" class="preview-card fade-in fade-in-delay-4">
+                    <div class="pc-icon">⚽</div>
+                    <div class="pc-title">Hobby's</div>
+                    <div class="pc-sub">Voetbal, gaming & meer</div>
+                </a>
+                <a href="contact.html" class="preview-card fade-in fade-in-delay-5">
+                    <div class="pc-icon">✉️</div>
+                    <div class="pc-title">Contact</div>
+                    <div class="pc-sub">Neem contact op</div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-name">Dancher <span>Silvanie</span></div>
+        <p>Software Developer · Techniek College Rotterdam</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    // Trigger hero fade-ins immediately
+    document.querySelectorAll('.hero .fade-in').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 150);
+    });
+</script>
+</body>
+</html>

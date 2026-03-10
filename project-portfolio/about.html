@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over mij — Dancher Silvanie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Dancher<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">Over mij</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projecten</a></li>
+            <li><a href="hobbies.html">Hobby's</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="page-wrap">
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="section-label">Leer mij kennen</div>
+        <h1 class="section-title">Over <span>mij</span></h1>
+        <p>Een passionele software developer uit Rotterdam met een liefde voor technologie en sport.</p>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-grid">
+
+                <!-- Foto carousel -->
+                <div class="about-photo-wrap">
+                    <div class="carousel">
+                        <div class="photo-ring"></div>
+
+                        <!-- ── Voeg hier extra foto's toe ── -->
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="images/foto.jpg" alt="Dancher Silvanie">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/foto2.jpg" alt="Dancher Silvanie">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/foto3.jpg" alt="Dancher Silvanie">
+                            </div>
+                        </div>
+                        <!-- ─────────────────────────────── -->
+
+                        <button class="carousel-btn carousel-prev" aria-label="Vorige foto">&#8592;</button>
+                        <button class="carousel-btn carousel-next" aria-label="Volgende foto">&#8594;</button>
+
+                        <div class="carousel-dots" id="carouselDots"></div>
+                    </div>
+
+                    <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                        <a href="contact.html" class="btn btn-primary" style="font-size:13px;padding:9px 18px;">
+                            Contact opnemen
+                        </a>
+                        <a href="projects.html" class="btn btn-outline" style="font-size:13px;padding:9px 18px;">
+                            Projecten bekijken
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tekst -->
+                <div class="about-text">
+                    <h2 class="fade-in">Dancher Silvanie</h2>
+                    <div class="tagline fade-in fade-in-delay-1">Software Developer in opleiding</div>
+
+                    <p class="fade-in fade-in-delay-1">
+                        Hallo! Ik ben Dancher, een gedreven software developer in mijn laatste jaar aan het
+                        Techniek College Rotterdam op de Prins Alexanderlaan. Ik heb een sterke passie voor
+                        het bouwen van webapplicaties en het oplossen van technische uitdagingen.
+                    </p>
+                    <p class="fade-in fade-in-delay-2">
+                        Tijdens mijn opleiding heb ik gewerkt met moderne webtechnologieën zoals HTML, CSS,
+                        PHP met object-georiënteerd programmeren en MySQL-databases. Ik vind het leuk om
+                        ideeën om te zetten in werkende applicaties — van een persoonlijk mediabeheer systeem
+                        tot een volledig functionele voetbalsite.
+                    </p>
+                    <p class="fade-in fade-in-delay-3">
+                        Naast programmeren ben ik een grote voetballiefhebber, game ik graag in mijn vrije tijd,
+                        luister ik muziek en kijk ik series en films. Deze interesses inspireren mij ook in mijn
+                        projectkeuzes — zoals mijn FotMob-geïnspireerde voetbalsite.
+                    </p>
+
+                    <!-- Feitjes -->
+                    <div class="about-facts fade-in fade-in-delay-2">
+                        <div class="fact-item">
+                            <div class="fact-label">Locatie</div>
+                            <div class="fact-value"><span>Rotterdam</span>, Nederland</div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-label">Opleiding</div>
+                            <div class="fact-value">Software <span>Developer</span></div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-label">School</div>
+                            <div class="fact-value">TC <span>Rotterdam</span></div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-label">Status</div>
+                            <div class="fact-value"><span>Laatste jaar</span> MBO</div>
+                        </div>
+                    </div>
+
+                    <!-- Tijdlijn -->
+                    <div class="fade-in fade-in-delay-3">
+                        <h3 style="font-size:16px;font-weight:700;margin-bottom:20px;color:var(--text-muted);
+                                   text-transform:uppercase;letter-spacing:.06em;">Opleiding</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot current"></div>
+                                <div class="timeline-year">2022 — Heden</div>
+                                <div class="timeline-school">Techniek College Rotterdam</div>
+                                <div class="timeline-study">MBO Software Developer · Prins Alexanderlaan</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-year">2017 — 2022</div>
+                                <div class="timeline-school">Middelbare School</div>
+                                <div class="timeline-study">Rotterdam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-name">Dancher <span>Silvanie</span></div>
+        <p>Software Developer · Techniek College Rotterdam</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

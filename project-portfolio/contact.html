@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Dancher Silvanie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Dancher<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projecten</a></li>
+            <li><a href="hobbies.html">Hobby's</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="page-wrap">
+    <div class="page-header">
+        <div class="section-label">Laten we praten</div>
+        <h1 class="section-title">Neem <span>Contact</span> op</h1>
+        <p>Heb je een vraag, voorstel of wil je gewoon kennismaken? Ik hoor het graag!</p>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contactinfo -->
+                <div class="fade-in">
+                    <div class="contact-info-title">Hallo daar! 👋</div>
+                    <p class="contact-info-desc">
+                        Ik ben Dancher, software developer in opleiding aan het Techniek College Rotterdam.
+                        Of het nu gaat om een stage, samenwerking of een simpele vraag — neem gerust contact op.
+                        Ik reageer zo snel mogelijk.
+                    </p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <div class="contact-item-label">Locatie</div>
+                            <div class="contact-item-value">Rotterdam, Nederland</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🏫</div>
+                        <div>
+                            <div class="contact-item-label">School</div>
+                            <div class="contact-item-value">Techniek College Rotterdam · Prins Alexanderlaan</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <div class="contact-item-label">E-mail</div>
+                            <div class="contact-item-value">Danchersilvanie@gmail.nl</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <div class="contact-item-label">Beschikbaarheid</div>
+                            <div class="contact-item-value">Beschikbaar voor stage & werk</div>
+                        </div>
+                    </div>
+
+                    <!-- Snelle links naar projecten -->
+                    <div style="margin-top:28px;">
+                        <p style="font-size:13px;font-weight:700;text-transform:uppercase;
+                                  letter-spacing:.06em;color:var(--text-dim);margin-bottom:12px;">
+                            Bekijk mijn werk
+                        </p>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                            <a href="projects.html" class="btn btn-outline"
+                               style="font-size:13px;padding:9px 16px;">
+                                Alle projecten
+                            </a>
+                            <a href="../project-fotmob/index.php" class="btn btn-outline"
+                               style="font-size:13px;padding:9px 16px;">
+                                KickOff ⚽
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contactformulier -->
+                <div class="fade-in fade-in-delay-1">
+                    <div style="background:var(--bg-card);border:1px solid var(--border);
+                         border-radius:var(--radius-lg);padding:32px;">
+                        <h2 style="font-size:20px;font-weight:800;margin-bottom:6px;">
+                            Stuur een bericht
+                        </h2>
+                        <p style="color:var(--text-muted);font-size:14px;margin-bottom:24px;">
+                            Vul het formulier in en ik neem zo snel mogelijk contact op.
+                        </p>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="naam">Naam</label>
+                                <input type="text" id="naam" name="naam" class="form-control"
+                                       placeholder="Jouw naam" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mailadres</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                       placeholder="jouw@email.nl" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="onderwerp">Onderwerp</label>
+                                <input type="text" id="onderwerp" name="onderwerp" class="form-control"
+                                       placeholder="Waar gaat het over?">
+                            </div>
+                            <div class="form-group">
+                                <label for="bericht">Bericht</label>
+                                <textarea id="bericht" name="bericht" class="form-control"
+                                          placeholder="Schrijf hier je bericht..." rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-teal" style="width:100%;justify-content:center;">
+                                Stuur Bericht
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-name">Dancher <span>Silvanie</span></div>
+        <p>Software Developer · Techniek College Rotterdam</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
